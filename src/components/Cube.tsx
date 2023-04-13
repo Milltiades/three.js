@@ -23,7 +23,7 @@ useFrame(state => (textRef.current.position.x = Math.sin(state.clock.elapsedTime
           <Text ref={textRef} fontSize={3} color={"#555"}>
             hello
           </Text>
-        </RenderTexture>
+          </RenderTexture>
       </meshStandardMaterial>
     </mesh>
   );

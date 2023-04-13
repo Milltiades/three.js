@@ -3,6 +3,8 @@ import styled from "styled-components";
 import WebDesign from "./WebDesign";
 import Development from "./Development";
 import ProductDesign from "./ProductDesign";
+import Illustration from "./Illustration";
+import SocialMedia from "./SocialMedia";
 
 const data = [
   "Web Design",
@@ -31,7 +33,16 @@ export default function Works() {
             <WebDesign />
           ) : work === "Development" ? (
             <Development />
-          ) : (
+          ) :
+          work === "Illustration" ? (
+            <Illustration/>
+          )
+          : 
+          work === "Social Media" ? (
+            <SocialMedia/>
+          )
+          :
+          (
             <ProductDesign />
           )}
         </Right>

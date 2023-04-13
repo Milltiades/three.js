@@ -1,10 +1,9 @@
 
-
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
-  const { nodes, materials } = useGLTF('/scene-transformed.glb')
+export default function Model(props:any) {
+  const { nodes, materials } = useGLTF<any>('/scene-transformed.glb')
   return (
     <group {...props} dispose={null} scale={[0.8, 0.8, 0.8]}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.81}>
